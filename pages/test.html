@@ -8,9 +8,13 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是test</h1>
-    <h2 id="testH2">0</h2>
-    <button class="btn">點擊加1</button>
+    <div class="row">
+      <div class="col-6">
+        <h1>我是test</h1>
+        <h2 id="testH2">0</h2>
+        <button id="add1" class="btn btn-primary mb-3">點擊加1</button>
+      </div>
+    </div>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
