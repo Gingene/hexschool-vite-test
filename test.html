@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test</title>
-    <script type="module" crossorigin src="/hexschool-vite-test/assets/test-a002c833.js"></script>
-    <link rel="stylesheet" href="/hexschool-vite-test/assets/test-39b2347a.css">
+    <script type="module" crossorigin src="/hexschool-vite-test/assets/test-0f9ea3be.js"></script>
+    <link rel="stylesheet" href="/hexschool-vite-test/assets/test-c6fbae08.css">
   </head>
   <body>
     <h1 class="header">我是 header</h1>
@@ -26,7 +26,7 @@
     </li>
   </ul>
 </nav> -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg navbar-light mycolor">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button
@@ -55,6 +55,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="test.html">test</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bg.html">bg</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -96,13 +99,26 @@
     </div>
   </div>
 </nav>
-    <div class="row">
-      <div class="col-6">
-        <h1>我是test</h1>
-        <h2 id="testH2">0</h2>
-        <button id="add1" class="btn btn-primary mb-3">點擊加1</button>
+    <div class="container">
+      <div class="row flex-column gy-4">
+        <div class="col-6 mx-auto text-center bg-info">
+          <h1>我是test</h1>
+          <h2 id="testH2">0</h2>
+          <button id="add1" class="btn btn-outline-success mb-3">
+            點擊加1
+          </button>
+        </div>
+        <div class="col-6 mx-auto">
+          <form class="form-ex1 input-group mb-4">
+            <label for="ex1" class="input-group-text">文字測試:</label>
+            <input type="text" id="ex1" name="exn" class="form-control" />
+            <button type="submit" class="btn btn-success" id="fB">送出</button>
+          </form>
+        </div>
+        <p class="form-ex1-output text-white bg-primary">輸出區域</p>
       </div>
     </div>
+
     <footer class="footer">我是 footer</footer>
     
   </body>
