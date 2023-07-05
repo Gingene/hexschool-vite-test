@@ -8,13 +8,26 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <div class="row">
-      <div class="col-6">
-        <h1>我是test</h1>
-        <h2 id="testH2">0</h2>
-        <button id="add1" class="btn btn-primary mb-3">點擊加1</button>
+    <div class="container">
+      <div class="row flex-column gy-4">
+        <div class="col-6 mx-auto text-center bg-info">
+          <h1>我是test</h1>
+          <h2 id="testH2">0</h2>
+          <button id="add1" class="btn btn-outline-success mb-3">
+            點擊加1
+          </button>
+        </div>
+        <div class="col-6 mx-auto">
+          <form class="form-ex1 input-group mb-4">
+            <label for="ex1" class="input-group-text">文字測試:</label>
+            <input type="text" id="ex1" name="exn" class="form-control" />
+            <button type="submit" class="btn btn-success" id="fB">送出</button>
+          </form>
+        </div>
+        <p class="form-ex1-output text-white bg-primary">輸出區域</p>
       </div>
     </div>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

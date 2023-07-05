@@ -1,15 +1,10 @@
-console.time();
 import "./assets/scss/all.scss";
-console.timeEnd();
+import "./node_modules/bootstrap/js/index.umd"; // import bootstrap js
 
-import "./assets/scss/all.scss";
-import "./node_modules/bootstrap/js/index.umd";
+import { clickAdd } from "./assets/js/test";
+import "./assets/js/testform";
 
 const testH2 = document.querySelector("#testH2");
 const add1B = document.querySelector("#add1");
 
-let number = 0;
-add1B.addEventListener("click", () => {
-  number += 1;
-  testH2.innerText = number;
-});
+clickAdd(add1B, testH2);
